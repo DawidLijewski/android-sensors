@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+apply from: '../buildsystem/android_commons.gradle'
+
+android {
+    defaultConfig {
+        applicationId "lijewski.template"
+        buildConfigField 'String', 'BASE_URL', "\"https://itunes.apple.com/\""
+    }
+}
+
+dependencies {
+    // AndroidX
+    implementation androidXDependencies.values()
+
+    //Rx
+    implementation rxJavaDependencies.values()
+
+    // Dagger
+    implementation daggerDependencies.values()
+    kapt daggerKaptDependencies.values()
+
+    // Timber
+    implementation loggingDependencies.timber
+
+    //Glide
+    implementation glideDependencies.glide
+    kapt glideDependencies.glideKapt
+
+    // Testing
+    testImplementation testDependencies.values()
+    androidTestImplementation testAndroidDependencies.values()
+}
