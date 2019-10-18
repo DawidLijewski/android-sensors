@@ -4,8 +4,7 @@ apply from: '../buildsystem/android_commons.gradle'
 
 android {
     defaultConfig {
-        applicationId "lijewski.template"
-        buildConfigField 'String', 'BASE_URL', "\"https://itunes.apple.com/\""
+        applicationId "lijewski.sensorsapp"
     }
 }
 

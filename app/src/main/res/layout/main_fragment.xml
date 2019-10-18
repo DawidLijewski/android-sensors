@@ -9,13 +9,13 @@
 
         <variable
             name="viewModel"
-            type="lijewski.template.presentation.main.MainViewModel" />
+            type="lijewski.sensorsapp.presentation.main.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="lijewski.template.presentation.main.MainFragment">
+        tools:context="lijewski.sensorsapp.presentation.main.MainFragment">
 
         <ProgressBar
             style="?android:attr/progressBarStyleLarge"

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="lijewski.template.app">
+    package="lijewski.sensorsapp.app">
 
     <application
-        android:name="lijewski.template.App"
+        android:name="lijewski.sensorsapp.App"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name="lijewski.template.presentation.splash.SplashActivity"
+            android:name="lijewski.sensorsapp.presentation.splash.SplashActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
@@ -24,7 +24,7 @@
         </activity>
 
 
-        <activity android:name="lijewski.template.presentation.main.MainActivity" />
+        <activity android:name="lijewski.sensorsapp.presentation.main.MainActivity" />
     </application>
 
 </manifest>
