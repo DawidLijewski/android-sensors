@@ -21,6 +21,8 @@ ext {
 
     glide_version = '4.8.0'
 
+    sensor_version = 'v0.2.0-rx2'
+
     junit_version = '4.12'
     androidx_junit_version = '1.1.1'
     uiautomator_version = '2.2.0'
@@ -69,6 +71,10 @@ ext {
     glideDependencies = [
             glide    : "com.github.bumptech.glide:glide:$glide_version",
             glideKapt: "com.github.bumptech.glide:compiler:$glide_version"
+    ]
+
+    sensorDependencies = [
+            sensor : "com.github.pwittchen:ReactiveSensors:$sensor_version"
     ]
 
     testDependencies = [
