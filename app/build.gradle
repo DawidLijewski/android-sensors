@@ -26,6 +26,9 @@ dependencies {
     implementation glideDependencies.glide
     kapt glideDependencies.glideKapt
 
+    //ReactiveSensors
+    implementation sensorDependencies.values()
+
     // Testing
     testImplementation testDependencies.values()
     androidTestImplementation testAndroidDependencies.values()

@@ -7,6 +7,7 @@ import lijewski.sensorsapp.App
 import lijewski.sensorsapp.di.module.AppModule
 import lijewski.sensorsapp.di.module.BuilderModule
 import lijewski.sensorsapp.di.module.RxModule
+import lijewski.sensorsapp.di.module.SensorModule
 import javax.inject.Singleton
 
 @Singleton
@@ -15,7 +16,8 @@ import javax.inject.Singleton
         AndroidSupportInjectionModule::class,
         AppModule::class,
         BuilderModule::class,
-        RxModule::class
+        RxModule::class,
+        SensorModule::class
     ]
 )
 interface AppComponent : AndroidInjector<App> {
